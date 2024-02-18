@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Universe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu-hitbox" onclick="toggleMenu()">
+        <div class="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+  </div>
+<nav class="menu">
+    <ul>
+        <li><a href="#home" onclick="showPage('home')"><h4>Home</h4></a></li>
+        <li>
+            <a href="#teams" onclick="toggleSubmenu()"><h4>Teams</h4></a>
+            <ul id="teams-submenu" class="submenu" style="display: none;">
+                <li><a href="#Overview" onclick="showPage('Overview')"><h5>Overview</h5></a></li>
+                <li><a href="#chemistry" onclick="showPage('chemistry')"><h5>Chemistry</h5></a></li>
+                <li><a href="#computerscience" onclick="showPage('computerscience')"><h5>Computer Science</h5></a></li>
+                <li><a href="#TechImpl." onclick="showPage('TechImpl.')"><h5>Technical implementation</h5></a></li>
+                <li><a href="#publicity" onclick="showPage('publicity')"><h5>Publicity</h5></a></li>
+                <li><a href="#budget" onclick="showPage('budget')"><h5>Budget</h5></a></li>
+                <li><a href="#materials" onclick="showPage('materials')"><h5>Materials</h5></a></li>
+                <li><a href="#design" onclick="showPage('design')"><h5>Design</h5></a></li>
+                <li><a href="#music" onclick="showPage('music')"><h5>Music</h5></a></li>
+
+            </ul>
+        </li>
+        <li><a href="#galleryFULL" onclick="showPage('galleryFULL')"><h4>Gallery</h4></a></li>
+    </ul>
+</nav>
+<div class="content" id="home">
+        <h2>Instant Universe: Ramen Rocket</h2>
+        <br>
+        <h3>We are cooking RAMEN in SPACE. Want to find out more about our project and help us?<br> Check out the epic teams and especially the cinematic trailer! Everyone is welcome! </h3>
+    <br>
+    <div class="video-and-team-container">
+        <div class="trailer">
+            <iframe src="https://www.youtube.com/embed/-J4OlTk5Vy8?si=E7-Rtu5bQuIdSTyB&autoplay=1" title="Trailer Ramen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="team" id="Team">
+            <h2>Our Team:</h2>
+            <br>
+            <img src="https://yt3.ggpht.com/kmpRjWcFkUG3pFajeIpvfB5-EhTpYtkUWiIwn6AxSzDfU-LXQmekedMwTyrSdnlh10-ga9LO-tUPPw=s800-nd-v1" alt="Members">
+        </div>
+    </div>
+        <div>
+        <hr  class="custom-line">
+        <h2>Join our journey!</h2>
+        <h2>Social media:</h2>
+        <h2><a href="https://www.youtube.com/@InstantUniverse" target="_blank">YouTube 📹</a><br></h2>
+        <h2><a href="https://www.tiktok.com/@instant.universe?is_from_webapp=1&sender_device=pc" target="_blank">TikTok 🤳</a><br></h2>
+        <h2><a href="https://www.instagram.com/instantramen586?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">Insta 📸</a><br></h2>
+        <h2><a href="https://www.patreon.com/InstantUniverse" target="_blank">Patreon ⭐</a></h2>
+        <br>
+        <h3>Email address for buisness/ideas/requests/donations ✉️:</h3>
+        <h3>instantuniverse595@gmail.com</h3>
+            <hr  class="custom-line">
+        </div>
+
+        <h2>Gallery</h2>
+    <div class="gallery">
+        <br>
+        <iframe src="https://www.youtube.com/embed/kPV9rufZMvo?si=lbusfIEdYlMmCLel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src="https://yt3.ggpht.com/SbtZ-G1CvkS2jYOSczbGc7RK-X2o1xzWbgjTpUTxk2CH63DHH_pN5KE9TnDUXfFJwHMK4wCjzJrs_-E=s800-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="Balloon">
+        <img src="https://yt3.ggpht.com/Vfb9k7y9O2tWJB3AI5A8FAIih0lYS5fWIhkC8Rk9KybZjtXXNtmK2G4KcDAeCJHr_Ty6Saw_VV3RGA=s800-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="Ramen Rocket">
+        <img src="https://yt3.ggpht.com/a4Ekat4d2QNRnfEJ6zaYetom8JX5WgdN0akQvlFsXpoRDJ0nOuIpJgTMH6DdAQSObhrRQT_Z_lolBQ=s800-c-fcrop64=1,13740000ec8bffff-nd-v1"  alt="Logo">
+        <img src="https://yt3.ggpht.com/HI17biu3gr1Lcw2lYipSnu_ONQfs6hyjpswGaWe0VmulrapKLTrcfyYj0vnCVupV3kVmNrvJOYt3JA=s800-c-fcrop64=1,00000000ffffffff-nd-v1" alt="Ramen World">
+        <img src="https://yt3.ggpht.com/B370_JSEdl3Zqe_0h-I7wEKQTrFoHi0SI1P60hrPw4eCm3XEHJYPKu4QYIuhV8gL2KFr5P-yEJED2w=s800-c-fcrop64=1,01880000fe77ffff-nd-v1" alt="Ramen Rocket2">
+    </div>
+
+
+
+</div>
+
+
+<div class="content" id="Overview" style="display:none;">
+    <h2>Overview</h2>
+    <br>
+    <div class="overview">
+        <p><h4>Task distribution:</h4></p>
+ <ul>
+     <li><h1>-Chemistry: Philipp, Jona, Haimo 🧪⚛️ </h1></li>
+     <li><h1>-Materials: Henry, Jona, Tobi 🛠</h1></li>
+     <li><h1>-Organisation: Charlie 📈 </h1></li>
+     <li><h1>-Publicity: Henry, Phillip, Haimo, Ilinca 📱🤳</h1></li>
+     <li><h1>-Computer Science and technical implementation plans: Ilinca, Anton, Haimo 🖥⌨️  </h1></li>
+     <li><h1>-Design: Charlie, Henry, Haiwen, Haimo, Tobi 🎨🖌 </h1></li>
+     <li><h1>-Technical implementation - Later ⏰ </h1></li>
+     <li><h1>-Budget: Anton, Philipp 💵 </h1></li>
+     <li><h1>-Overview: Charlie, Anton 📝</h1></li>
+     <li><h1>-Music (because it's great): Haimo, Jona, Philipp, Ilinca, Henry, Haiwen, Anton, Tobi, Casimir 🎶🎸 </h1></li>
+     <li><h1>-Positive energy (stickers): Tinna 😄</h1></li>
+ </ul>
+
+        <div class="team" id="overviewTeam">
+     <img src="https://yt3.ggpht.com/kmpRjWcFkUG3pFajeIpvfB5-EhTpYtkUWiIwn6AxSzDfU-LXQmekedMwTyrSdnlh10-ga9LO-tUPPw=s800-nd-v1" alt="Members">
+        </div>
+    </div>
+</div>
+
+<div class="content" id="chemistry" style="display:none;">
+    <h2>Chemistry</h2>
+    <br>
+    <div class="chem">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Jona, Philipp and Haimo</h5></p>
+        <p><h3>Tasks:</h3><h5>Figure out a way to cook ramen in space without exploding the rocket.</h5></p>
+        <p><h3>Current stauts:</h3><h5>Found exothermic reaction: calcium oxide (quicklime) and water; <br> sketch of the construction (view image).</h5></p>
+  <div class="trailer" id="chemTrailer">
+    <h3>Videos from the chemistry group</h3>
+       <br>
+      <iframe src="https://www.youtube.com/embed/t8OSiVNseAM?si=eb1cQw_rDyKgUUJF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+        <div class="gallery" id="chemGallery">
+        <h3>Images Section</h3>
+        <img src="https://yt3.ggpht.com/T3iEPUb2m9B8KcqsGOnbOG7-223ilqelypOucMn99ltioPjRko1O_k8eIAKC-m99o92raj1iAWM_BA=s800-nd-v1"  alt="Plan">
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="computerscience" style="display:none;">
+    <h2>Computer science</h2>
+    <br>
+    <div class="info">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Ilinca, Anton and Haimo</h5></p>
+        <p><h3>Tasks:</h3><h5>Control, tracking, how we implement it (rasberry pi or hanry's cell phone) <br> and trigger the parachute, coding website and more probably.</h5></p>
+        <p><h3>Current stauts:</h3><h5>Coded a tracking algorithm that calculate the angle to turn <br> in order to get back to the start and finished the website.</h5></p>
+  <div class="trailer" id="infoTrailer">
+    <h3>Videos from the computer science group</h3>
+       <br>
+      <h5>Working on it rn.</h5>
+  </div>
+        <div class="gallery" id="infoGallery">
+        <h3>Images Section</h3>
+        <img src="https://yt3.ggpht.com/C_s7TUXPgUTntIDrRguJeuVc_NNqi2rvPTyTPYYQXn2vGRCqGDAzBqMsAIaJN51Ew_Jm0nBoH0uVf4k=s800-c-fcrop64=1,000006e4fffff91b-nd-v1"  alt="Website Code">
+             <img src="https://yt3.ggpht.com/nvjXMMHJE2Pti38_bwXTlkqO9lhwtT1GRKpFaCf0zXrZfM1MthB2edrBaXFLUPfbLNyWlbAXI4cg=s800-c-fcrop64=1,18220000e7ddffff-nd-v1"  alt="Pycharm">
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="TechImpl." style="display:none;">
+    <h2>Technical implementation</h2>
+    <br>
+    <div class="tech">
+    <h3>Coming soon</h3>
+    </div>
+</div>
+
+<div class="content" id="publicity" style="display:none;">
+    <h2>Publicity</h2>
+    <br>
+    <div class="publicity">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Herny, Haimo, Philipp, Ilinca</h5></p>
+        <p><h3>Tasks:</h3><h5>Keep you entertained with posting multiple time per week on Whatsapp, Insta,<br> TikTok, Patreon and YouTube and documenting our status.</h5></p>
+        <p><h3>Current stauts:</h3><h5>Around 60 followers on Whatsapp and 50 on YouTube and over 2k views.</h5></p>
+  <div class="trailer" id="pubTrailer">
+    <h3>Videos from the publicity group</h3>
+       <br>
+      <iframe src="https://www.youtube.com/embed/-J4OlTk5Vy8?si=egSqmXcKnCrEVfNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/kPV9rufZMvo?si=irf7CN9x91sxMA7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <iframe  src="https://www.youtube.com/embed/5RFaWWP1Erg?si=X-kMaODztrtWCf5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/J0d-H4HTXa4?si=oBE3Vd9STB4bYJDh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+        <div class="gallery" id="pubGallery">
+        <h3>Images Section <br> (basically every picture on this site)</h3>
+        <img src="https://yt3.ggpht.com/a4Ekat4d2QNRnfEJ6zaYetom8JX5WgdN0akQvlFsXpoRDJ0nOuIpJgTMH6DdAQSObhrRQT_Z_lolBQ=s800-c-fcrop64=1,13740000ec8bffff-nd-v1"  alt="Logo">
+            <img src="https://yt3.ggpht.com/Vfb9k7y9O2tWJB3AI5A8FAIih0lYS5fWIhkC8Rk9KybZjtXXNtmK2G4KcDAeCJHr_Ty6Saw_VV3RGA=s800-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="pfp">
+
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="budget" style="display:none;">
+    <h2>Budget</h2>
+    <br>
+    <div class="budget">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Anton and Philipp</h5></p>
+        <p><h3>Tasks:</h3><h5>Keep up with the money and manage it for shopping materials.</h5></p>
+        <p><h3>Current stauts:</h3><h5>-</h5></p>
+  <div class="trailer" id="budgetTrailer">
+    <h3>Videos from the budget group</h3>
+       <br>
+      <h5>This group hasn't upload any videos yet.</h5>
+  </div>
+        <div> <!-- Need to add these when i have photos: class="gallery" id="budgetGallery" -->
+        <h3>Images Section</h3>
+            <h5>More to see here soon.</h5>
+
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="materials" style="display:none;">
+    <h2>Materials</h2>
+    <br>
+    <div class="materials">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Henry, Jona and Tobi</h5></p>
+        <p><h3>Tasks:</h3><h5>Find cheap but solid materials for our rocket and create a shopping list.</h5></p>
+        <p><h3>Current stauts:</h3><h5>Some great ideas more about them soon.</h5></p>
+  <div class="trailer" id="matTrailer">
+    <h3>Videos from the materials group</h3>
+       <br>
+       <h5>Nothing here :(</h5>
+  </div>
+        <div> <!-- Need to add these when i have photos: class="gallery" id="matGallery" -->
+        <h3>Images Section</h3>
+            </br>
+            <h5>More to see here soon.</h5>
+
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="design" style="display:none;">
+    <h2>Design</h2>
+    <br>
+    <div class="design">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Charlie, Henry, Haiwen, Haimo and Tobi</h5></p>
+        <p><h3>Tasks:</h3><h5>Find a design for our weather balloon or rocket body.</h5></p>
+        <p><h3>Current stauts:</h3><h5>Planning a design competiton at our school.</h5></p>
+  <div class="trailer" id="designTrailer">
+    <h3>Videos from the design group</h3>
+       <br>
+       <h5>No videos...yet.</h5>
+  </div>
+        <div> <!-- Need to add these when i have photos: class="gallery" id="designGallery" -->
+        <h3>Images Section</h3>
+            <br>
+            <h5>More to see here soon.</h5>
+
+        </div>
+
+</div>
+</div>
+
+<div class="content" id="music" style="display:none;">
+    <h2>Music</h2>
+    <br>
+    <div class="music">
+    <h3>All you need to know:</h3>
+    <p><h3>Members:</h3><h5>Haimo (cello), Jona (sax), Philipp (sax), Ilinca (piano), Henry (guitar), Haiwen (cello), Anton (trumpet), Tobi (double bass) and Casimir</h5></p>
+        <p><h3>Tasks:</h3><h5>Compose awesome thematic music for our rocket because music is great. </h5></p>
+        <p><h3>Current stauts:</h3><h5>Found a sound and now writing down the notes for each instrument.</h5></p>
+  <div class="trailer" id="musicTrailer">
+    <h3>Videos from the music group</h3>
+       <br>
+      <h5>Video will come soon.</h5>
+  </div>
+        <div id="musicGallery">
+        <h3>Downloads</h3>
+            <h2><a href="SchmitzTheme.mp3" download="Song Instant Universe.mp3">Song download</a></h2>
+            <br>
+            <h2><a href="SchmitzThemePiano.opus" download="PianoVer Instant Universe.mp3">Piano version download</a></h2>
+            <br>
+            <h2><a href="Create a melodie, which includes things like space, cooking and Noodles (875ca201351f4d8daa386660e6816e68).mp3" download="SpaceTheme Instant Universe.mp3">Space themed download</a></h2>
+
+        </div>
+
+</div>
+</div>
+
+
+<div class="content" id="galleryFULL" style="display:none;" >
+    <h2>Gallery</h2>
+    <br>
+    <div class="gallery">
+        <img src="https://yt3.ggpht.com/cYTQwIsteU5aeEAa_gsSb5iJIGQ_PmOxv1_DFtB-SVmpGJsPMIBEA3QhwJtZZ38Ao04Lq_kIuX0D=s518-c-fcrop64=1,00000411fffffbee-nd-v1"  alt="Balloon2">
+        <img src="https://yt3.ggpht.com/SbtZ-G1CvkS2jYOSczbGc7RK-X2o1xzWbgjTpUTxk2CH63DHH_pN5KE9TnDUXfFJwHMK4wCjzJrs_-E=s800-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="Balloon">
+        <img src="https://yt3.ggpht.com/Vfb9k7y9O2tWJB3AI5A8FAIih0lYS5fWIhkC8Rk9KybZjtXXNtmK2G4KcDAeCJHr_Ty6Saw_VV3RGA=s800-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="Ramen Rocket">
+        <img src="https://yt3.ggpht.com/a4Ekat4d2QNRnfEJ6zaYetom8JX5WgdN0akQvlFsXpoRDJ0nOuIpJgTMH6DdAQSObhrRQT_Z_lolBQ=s800-c-fcrop64=1,13740000ec8bffff-nd-v1"  alt="Logo">
+        <img src="https://yt3.ggpht.com/HI17biu3gr1Lcw2lYipSnu_ONQfs6hyjpswGaWe0VmulrapKLTrcfyYj0vnCVupV3kVmNrvJOYt3JA=s800-c-fcrop64=1,00000000ffffffff-nd-v1" alt="Ramen World">
+        <img src="https://yt3.ggpht.com/B370_JSEdl3Zqe_0h-I7wEKQTrFoHi0SI1P60hrPw4eCm3XEHJYPKu4QYIuhV8gL2KFr5P-yEJED2w=s800-c-fcrop64=1,01880000fe77ffff-nd-v1" alt="Ramen Rocket2">
+        <img src="https://yt3.ggpht.com/OA78lhKrXAzStyglLzXyFSL-8kojfOwzgG_pZ059mbCct4VRUjJr0olrp660sAC3WguMz6rN0ZjObQ=s800-c-fcrop64=1,01300000fecfffff-nd-v1"  alt="RAMENNNNNWORLD2">
+        <img src="https://yt3.ggpht.com/d2crEQUlW9YS6cPbx5zDPZmWxhr65LK9Iw_C71G9dckuv2PGz6NssVMRbeSvTRaWy8n_IZfzxHgiFg=s501-c-fcrop64=1,00000000ffffffff-nd-v1"  alt="ramenROCKETblue">
+        </div>
+
+</div>
+A website coded by Ilinca
+</body>
+</html>

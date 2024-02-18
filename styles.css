@@ -1,0 +1,508 @@
+body {
+    background-image: url('https://cdn.wallpapersafari.com/15/70/T42fjF.jpg');
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.menu{
+    position: absolute;
+    z-index: 1;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.trailer iframe{
+    margin: 10px;
+}
+
+.gallery img {
+        margin: 10px;
+        }
+
+
+/* Common styles for both media queries */
+.video-and-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.custom-line {
+        border-top: 3px solid white;
+    }
+
+.trailer,
+.team {
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+
+.overview{
+    border: 7px solid white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(67, 0, 222, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.chem,
+.info,
+.tech,
+.publicity,
+.budget,
+.materials,
+.design,
+.music{
+    border: 7px solid white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+
+}
+.chem{
+    background-color: rgba(0, 111, 222, 0.2);
+}
+
+
+.info{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tech{
+    background-color: rgba(40, 255, 3, 0.2);
+}
+.publicity{
+    background-color: rgba(245, 86, 0, 0.2);
+}
+
+.budget{
+    background-color: rgba(73, 130, 64, 0.2);
+}
+
+.materials{
+    background-color: rgba(0, 245, 237, 0.2);
+}
+
+.design{
+    background-color: rgba(252, 244, 3, 0.2);
+}
+
+.music{
+    background-color: rgba(247, 247, 247, 0.2);
+}
+
+#overviewTeam{
+border-top: white solid 7px;
+border-bottom: 0px;
+border-right:0px;
+border-left:0px;
+}
+
+.team{
+  background-image: url("https://e0.pxfuel.com/wallpapers/440/807/desktop-wallpaper-purple-galaxy-dark-purple-galaxy.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 7px white dotted;
+
+
+}
+
+li{
+list-style-type: none;
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    text-align: center;
+    font-family: "Calibri";
+}
+
+a {
+    color: #009FFA;
+    font-size: 30px;
+}
+#chemGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#infoGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#pubGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#budgetGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#matGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#designGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+
+#musicGallery{
+    border-top: white solid 7px;
+    margin: 10px;
+}
+#chemTrailer{
+    border-top: white solid 7px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#infoTrailer{
+    border-top: white solid 7px;
+    /* add here the code from chemTrailer when i have a video */
+}
+
+#pubTrailer{
+    border-top: white solid 7px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#budgetTrailer{
+    border-top: white solid 7px;
+    /* add here the code from chemTrailer when i have a video */
+}
+
+#matTrailer{
+    border-top: white solid 7px;
+    /* add here the code from chemTrailer when i have a video */
+}
+
+#designTrailer{
+    border-top: white solid 7px;
+    /* add here the code from chemTrailer when i have a video */
+}
+
+#musicTrailer{
+    border-top: white solid 7px;
+    /* add here the code from chemTrailer when i have a video */
+}
+
+/* Styles for mobile-specific */
+@media only screen and (max-width: 768px) {
+#sep img{
+    width: 350px;
+    height: 150px;
+}
+
+ .container {
+        flex-direction: column;
+    }
+
+   .gallery img {
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .gallery iframe {
+        width: 350px;
+        height: 350px;
+    }
+
+
+
+    .content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .trailer,
+    .team {
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .trailer iframe {
+        width: 350px;
+        height: 350px;
+
+
+    }
+
+    .line {
+        width: 15% ;
+        height: 5px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+        text-align: center;
+
+
+    }
+
+    .menu {
+    display: none;
+    top: 60px;
+    left: 0px;
+    background-color: black;
+    width: 200px;
+    }
+
+
+
+.menu ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    .menu-show {
+        display: block !important;
+    }
+
+
+    a{
+  top: 20px;
+  font-size:30px
+}
+
+.team img{
+   max-width: 350px;
+   min-height: 250px;
+}
+
+
+}
+
+/* Styles for larger screens */
+@media only screen and (min-width: 769px) {
+
+
+
+
+
+    .content > div {
+        clear: both;
+        margin-bottom: 20px;
+    }
+
+#sep img{
+    width: 600px;
+    height: 400px;
+}
+
+
+.menu-hitbox:hover .line {
+    background-color: #D8D7D7;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+a:hover{
+color: #007DC4;
+}
+
+    .line {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 10px auto;
+    }
+
+    .line:hover {
+    background-color: #D8D7D7;
+}
+
+
+    .menu {
+        display: none;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        width: 310px;
+    }
+
+    .menu ul li {
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    .menu ul li a :hover {
+    color: #D8D7D7
+    }
+
+
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .content h2 {
+        color: white;
+    }
+
+    .content p {
+        color: white;
+    }
+
+    .menu-show {
+        display: block !important;
+    }
+     h1{
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+
+
+    .gallery img {
+        width: 400px;
+        height: 400px;
+        margin: 10px; /* Add margin around images for spacing */
+
+    }
+
+    .gallery iframe{
+        width: 400px;
+        height: 400px;
+        margin: 10px;}
+
+
+    .video-and-team-container > div {
+        margin-right: 50px;
+        justify-content: space-between; /* Distribute items evenly with space between them */
+
+    }
+
+
+
+    #home {
+        display: block;
+    }
+
+
+    .menu-hitbox {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .trailer iframe {
+        width: 900px;
+        height: 600px;
+    }
+    a{
+    color:#009FFA;
+    top: 20px;
+    font-size:50px
+
+}
+
+}
